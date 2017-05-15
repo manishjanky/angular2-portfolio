@@ -1,0 +1,58 @@
+<div *ngIf="profile">
+    <h4 class="color-midnightblue"><span class="fa fa-address-book"></span> Contact</h4>
+    <hr>
+ 
+        <div class="row card horizontal">
+            <div class="col l3 m3 s3 color-midnightblue" style="padding:20px;">
+                <span class="fa fa-3x fa-phone"></span>
+            </div>
+            <div class="col l9 m9 s9 info">
+                <div>
+                    <p class="flow-text">
+                        <span class="fa fa-mobile"></span>
+                        <a href="tel:{{profile.contactDetails.contactNumber}}">{{profile.contactDetails.contactNumber}}</a>
+                    </p>
+                </div>
+                <div *ngIf="profile.contactDetails.alternateNumber">
+                    <p class="flow-text">
+                        <span class="fa fa-mobile"></span>
+                        <a href="tel:{{profile.contactDetails.alternateNumber}}">{{profile.contactDetails.alternateNumber}}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row card horizontal">
+            <div class="col l3 m3 s3 color-midnightblue" style="padding:20px;">
+                <span class="fa fa-3x fa-envelope"></span>
+            </div>
+            <div class="col l9 m9 s9 info">
+                <div>
+                    <p class="flow-text">
+                        <a href="mailto:{{profile.contactDetails.email}}?Subject=Hello {{profile.name}}">{{profile.contactDetails.email}}</a>
+                    </p>
+                </div>
+                <div *ngIf="profile.alternateEmail">
+                    <p class="flow-text">
+                        <a href="mailto:{{profile.contactDetails.alternateEmail}}?Subject=Hello {{profile.name}}">{{profile.contactDetails.alternateEmail}}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row card horizontal">
+            <div class="col l3 m3 s3 color-midnightblue" style="padding:20px;">
+                <span class="fa fa-3x fa-address-card"></span>
+            </div>
+            <div class="col l9 m9 s9 info">
+                <div>
+                    <p class="flow-text">
+                        {{profile.contactDetails.address.street}}
+                        <br /> {{profile.contactDetails.address.society}}
+                        <br /> {{profile.contactDetails.address.city}}, {{profile.contactDetails.address.state}} - {{profile.contactDetails.address.pin}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+</div>

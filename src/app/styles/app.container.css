@@ -1,0 +1,49 @@
+
+.bannerdiv{
+    height:500px; 
+    background-color: rgba(240,248,255,0.2); 
+    background-image: url(../../assets/images/manish.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top:-56px;
+    top:0;
+    white-space: nowrap;
+    text-align: center;
+    padding: 20px;
+    color: midnightblue;
+    width: 100%;
+}
+.caption{
+  margin-top:300px;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+       background-color:transparent;
+     padding:10px;
+}
+
+@media only screen and (min-width: 601px) {
+  .conatiner {
+    width: 100%;
+  }
+  .bannerdiv{
+    margin-top:-64px; 
+  }
+
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 100%;
+  }
+
+}
+
+.captionText{
+  background-color:rgba(255,255,255,0.3)
+}
+

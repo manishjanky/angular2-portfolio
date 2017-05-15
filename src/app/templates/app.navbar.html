@@ -1,0 +1,17 @@
+
+  <div class="navbar-fixed">
+<nav [ngClass]="{'fixnavbar': !isScrolled,'blue':isScrolled}">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Manish Kumar</a>
+      <a  data-activates="mobile-demo" class="button-collapse color-midnightblue">
+        <span id="sidenavbutton" (click)="sideNav()" class="fa fa-2x fa-bars"></span>
+        </a>
+      <ul class="right hide-on-med-and-down">
+        <li *ngFor="let link of navLinks" ><a routerLink="/{{link}}">{{link}}</a></li>
+      </ul>
+    </div>
+    <ul [hidden]="!toggleSideNav" class="side-menu">
+      <li *ngFor="let link of navLinks"><a routerLink="/{{link}}">{{link}}</a></li>
+    </ul>
+  </nav>
+</div>

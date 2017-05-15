@@ -1,0 +1,30 @@
+<div *ngIf="profile">
+    <h4 class="color-midnightblue"><span class="fa fa-user"></span> About Me</h4>
+    <hr>
+    <div class="row card horizontal ">
+        <div class="card-content col l12  m12 s12 flow-text" *ngIf="profile.aboutMe">
+            {{profile.aboutMe}}
+        </div>
+    </div>
+<h4 class="color-midnightblue"><span class="fa  fa-code"></span> Skills</h4>
+    <hr>
+     <div class="row card horizontal ">
+        <div class="card-content col l12  m12 s12" *ngIf="profile.skills">
+            <div class="chip" *ngFor="let skill of profile.skills">
+                {{skill.skill}} <span class="fa fa-star"> {{skill.rating}}</span>
+            </div>
+        </div>
+    </div>
+    <h4 class="color-midnightblue"><span class="fa  fa-graduation-cap"></span> Education</h4>
+    <hr>
+    <div class="row card horizontal ">
+        <div class="card-content col l12  m12 s12" *ngIf="profile.education">
+            <div class="card-action" *ngFor="let education of profile.education">
+                <h5>{{education.qualification}} <span ng-if="education.stream">{{education.stream}}</span><span> @{{education.institute}}</span></h5>
+                <div><span>Passed: {{education.passingYear}}</span></div>
+                <div><span>Marks: {{education.marks}} %</span></div>
+            </div>
+        </div>
+    </div>
+    
+</div>

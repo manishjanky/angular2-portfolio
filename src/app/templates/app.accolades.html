@@ -1,0 +1,18 @@
+<h4 class="color-midnightblue"><span class="fa fa-certificate"></span> Accolades </h4>
+<hr>
+<div *ngIf="profile" class="padding">
+<div class="card" *ngFor="let accolade of profile.accolades" >
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="../../assets/images/accolades/{{accolade.image}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">{{accolade.title}}<i class="fa fa-ellipsis-v right"></i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{accolade.title}}<i class="fa fa-close right"></i></span>
+      <p>{{accolade.description}}</p>
+      <a *ngIf="accolade.link" class="btn blue" href="{{accolade.link}}" target="_blank">Verify</a>
+    </div>
+  </div>
+  </div>
+ 

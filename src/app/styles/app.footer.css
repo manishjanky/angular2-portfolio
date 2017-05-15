@@ -1,0 +1,13 @@
+.page-footer{
+    padding: 25px;
+    background-color: transparent; 
+     
+}
+.page-footer>.row{
+    margin:0;
+    padding:5px;
+    font-size: 20px;
+}
+.page-footer a{
+    color:midnightblue; 
+}

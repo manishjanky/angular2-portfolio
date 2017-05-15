@@ -1,0 +1,20 @@
+<h4 class="color-midnightblue"><span class="fa fa-suitcase"></span> Projects </h4>
+<hr>
+<div *ngIf="profile" class="padding">
+    <div class="row col l12 m12 s12 card " *ngFor="let project of profile.projects">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../../assets/images/project.jpg">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{project.name}}<i class="fa fa-ellipsis-v right"></i></span>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{project.name}}<i class="fa fa-close right"></i></span>
+            <p class="flow-text">{{project.description}}</p>
+            <div *ngIf="project.startDate" class="flow-text">Time: From {{project.startDate}} To {{project.endDate}}<span *ngIf="!project.endDate">Today</span></div>
+            <div *ngIf="project.client" class="flow-text">Client: {{project.client}}</div>
+            <div *ngIf="project.technologies" class="flow-text">Technologies: {{project.technologies}}</div>
+            <div *ngIf="project.link" class="flow-text"><a href="{{project.link}}" class="btn blue"  target="_blank" ng-if="project.link">{{project.name}}</a></div>
+        </div>
+    </div>
+</div>

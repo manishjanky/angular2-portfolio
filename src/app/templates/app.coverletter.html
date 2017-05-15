@@ -1,0 +1,15 @@
+<h4 class="color-midnightblue">Cover Letter</h4>
+<hr>
+<div *ngIf="profile">
+    <div class="row card horizontal">
+            <div class="col l12 m12 s12 card-content flow-text">
+                <p>{{profile.coverLetter.greeting}}</p>
+                <p>{{profile.coverLetter.opening}}</p>
+                <p>{{profile.coverLetter.start}}</p>
+                <p>{{profile.coverLetter.skills}}</p>
+                <p>{{profile.coverLetter.close}}</p>
+                <p>Sincerely</p>
+                <p>{{profile.name}}</p>
+            </div>
+        </div>
+    </div>
