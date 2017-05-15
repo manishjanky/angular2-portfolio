@@ -13,4 +13,7 @@ constructor(
     private appService: AppService){
         appService.getProfile().then(profile=>this.profile=profile);            
     }
+    hack(val) {
+  return Array.from(val);
+}
 }

@@ -1,7 +1,7 @@
 <hr>
 <div class="page-footer" *ngIf="profile">
     <div class="row">
-        <div *ngFor="let social of profile.socialProfiles" class="col s2 center">
+        <div *ngFor="let social of hack(profile.socialProfiles)" class="col s2 center">
             <a href="{{social.link}}" target="_blank"><span Class="fa fa-2x" [ngClass]="social.class"></span></a>
         </div>
     </div>
