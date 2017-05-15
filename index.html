@@ -11,8 +11,18 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
 <link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
 <body>
   <maninContent>Loading...</maninContent>
-<script type="text/javascript" src="inline.3f5abfe1029272bcd015.bundle.js"></script><script type="text/javascript" src="polyfills.f50e66715da2d84edabc.bundle.js"></script><script type="text/javascript" src="main.75e38122cc26b94dd591.bundle.js"></script></body>
+<script type="text/javascript" src="inline.f9ba512e927f5dc06f4a.bundle.js"></script><script type="text/javascript" src="polyfills.f50e66715da2d84edabc.bundle.js"></script><script type="text/javascript" src="main.4c22e784ce6b51c9d1a1.bundle.js"></script></body>
 </html>
