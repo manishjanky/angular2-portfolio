@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html,body{
+  min-height: 100%;
+  width: 100%;
+}
+body{
+   background-color: rgb(239, 233, 233);
+}
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+footer{
+   margin-top:70px;
+}
+.color-midnightblue{
+  color: midnightblue !important;
+}
