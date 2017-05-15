@@ -2,7 +2,7 @@
 .bannerdiv{
     height:500px; 
     background-color: rgba(240,248,255,0.2); 
-    background-image: url(../assets/images/manish.jpg);
+    background-image: url(../angular2-portfolio/assets/images/manish.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
