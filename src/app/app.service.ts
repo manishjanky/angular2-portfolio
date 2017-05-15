@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 export class AppService  {
 constructor(private http: Http) { }
  getProfile(): Promise<any> {
-    return this.http.get('profile.json')
+    return this.http.get('https://manishjanky.github.io/profile.json')
                .toPromise()
                .then(response => response.json() as Object)
   }
