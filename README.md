@@ -3,4 +3,4 @@ This is [Portfolio](https://manishjanky.github.io/angular2-portfolio) i have cre
 
 ## Help Improve
 
-Found a bug or an issue with this? [Open a new issue](https://github.com/manishjanky/manishjanky.github.io/issues) here on GitHub. 
+Found a bug or an issue with this? [Open a new issue](https://github.com/manishjanky/angular2-portfolio/issues) here on GitHub. 
