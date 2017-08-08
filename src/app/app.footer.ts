@@ -25,7 +25,8 @@ export class FooterComponent{
             "class":"fa-github-square"
         },
         {"name":"linkedin","link":"https://in.linkedin.com/in/manishjanky","class":"fa-linkedin-square"},
-        {"name":"stackOverFlow","link":"http://stackoverflow.com/users/4948483/manish","class":"fa-stack-overflow"}
+        {"name":"stackOverFlow","link":"http://stackoverflow.com/users/4948483/manish","class":"fa-stack-overflow"},
+      {"name":"Blogger","link":"https://manishjanky.blogspot.in/","class":"fa-rss-square"}
    ];
 constructor(
     private appService: AppService){
